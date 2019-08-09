@@ -65,6 +65,21 @@ function Operate() {
 }
 
 
+function Operate(Operate_string) {
+    let num1;
+    let num2;
+    let index;
+
+    for (let i = 0; i < Operate_string.length; i++) {
+        if (Operate_string[i] == '+' || Operate_string[i] == '-' || Operate_string[i] == '*' || Operate_string[i] == '/')
+            index = i;
+    }
+
+
+}
+
+
+
 document.getElementById("btnClr").addEventListener("click", Clean_Res);
 
 document.getElementById("btn0").addEventListener("click", Write_in_Res);
@@ -74,5 +89,9 @@ document.getElementById("btnSub").addEventListener("click", Write_in_Res);
 document.getElementById("btnMul").addEventListener("click", Write_in_Res);
 document.getElementById("btnDiv").addEventListener("click", Write_in_Res);
 
+<<<<<<< HEAD
 
 document.getElementById("btnEql").addEventListener("click", Operate);
+=======
+document.getElementById("btnEql").onclick = Operate(str.innerHTML);
+>>>>>>> dgrfjdg

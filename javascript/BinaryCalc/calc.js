@@ -54,9 +54,11 @@ function Operate() {
             document.getElementById('res').innerHTML = result2;
             break;
         case '/':
+            let r;
             result = parseInt(num1, 2) / parseInt(num2, 2);
-            console.log('Decimal_Result: ' + result);
-            result2 = result.toString(2);
+            r = Math.floor(result);
+            console.log('Decimal_Result: ' + r);
+            result2 = r.toString(2);
             console.log('Binary_Result: ' + result2);
             document.getElementById('res').innerHTML = result2;
             break;

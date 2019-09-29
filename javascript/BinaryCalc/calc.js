@@ -54,9 +54,11 @@ function Operate() {
             document.getElementById('res').innerHTML = result2;
             break;
         case '/':
+            let r;
             result = parseInt(num1, 2) / parseInt(num2, 2);
-            console.log('Decimal_Result: ' + result);
-            result2 = result.toString(2);
+            r = Math.floor(result);
+            console.log('Decimal_Result: ' + r);
+            result2 = r.toString(2);
             console.log('Binary_Result: ' + result2);
             document.getElementById('res').innerHTML = result2;
             break;
@@ -75,4 +77,8 @@ document.getElementById("btnMul").addEventListener("click", Write_in_Res);
 document.getElementById("btnDiv").addEventListener("click", Write_in_Res);
 
 
+<<<<<<< HEAD
 document.getElementById("btnEql").addEventListener("click", Operate);
+=======
+document.getElementById("btnEql").addEventListener("click", Operate);
+>>>>>>> c17f28969862a81a8fe02ca69d9de34cfa2739f2
